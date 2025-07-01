@@ -1,0 +1,53 @@
+---
+title: Giving Up or Moving Forward
+description: freshman year comp bio research spiel
+date: 2025-7-1
+---
+> “Whether a decision is good or bad can change based on how you act after the choice is made.
+> You can’t learn all the lessons beforehand. You learn a lot about what you want in a marriage _after_ getting married. You discover what type of career you enjoy _after_ doing a lot of work. And so it goes in nearly every area of life. In many cases, what you wish you knew ahead of time can only be learned after the decision is made.
+> So there is nothing left but to pay attention to what you like, continue to iterate, and commit to making the most of each opportunity. There is no perfect decision. Good decisions are made right after the fact.” —[James Clear](https://jamesclear.com/3-2-1/february-13-2025#:~:text=%E2%80%9CWhether%20a%20decision,after%20the%20fact.%E2%80%9D)
+
+At the start of this year I reached out to NYU CS professors about research opportunities. Among the folks who kindly responded, I got a mixture of gentle denial and followup inquiry. Eventually, I agreed to a project over video call.
+
+Fast forward to March 3rd, I’m in the PI’s office, letting him know that I decided over the weekend to give up, de-commit, strategically reprioritize, whatever you want to call it. I just really wanted to write a bit about what that's meant for me.
+
+## motivations
+
+In my first semester of college, I met a lot of really interesting and interest*ed* people doing interesting things. I got good grades and improved my fitness. I got better at writing, both in terms of complexity and also the particular skill of sitting down and just _writing_ without waffling. I read a book! Insane stuff in this content feed economy. At the same time, I didn't make anything or get interested in any problems, or even really pay attention to what was happening in the world. I figured I should probably turn that around the second semester.
+
+I’d had a little high school stint in 2023 in a molecular biology lab, playing around with clustering and differentially analyzing cells by RNA expression, and it'd been relatively enjoyable. Research seems like a "good opportunity" that people gun for, so I thought to myself why not do more of it?
+
+That being said, when I was asked if I was interested in the project that I would be working on if I joined the particular group that I ended up joining, I could feel in my heart that the honest answer was no. I said yes anyway. The project itself is pretty serious and has a meaningful goal, and clearly would be intellectually challenging-- just not that exciting for me, personally. My reasoning was that if I can't be interested in this, then maybe I'm not meant to be doing computer science. Surely, if this meaningful application of technical skills doesn't actually excite me, then should I give up here and now? I'm a bit of a self-improvement / productivity aficionado, and at that moment, all kinds of quotes raced through my head, such as “The magic you’re looking for is in the work you’re avoiding” (Dipen Parmar) or "Passion comes after you put in the hard work to become excellent at something valuable, not before. In other words, what you do for a living is much less important than how you do it" (Cal Newport). In the moment, I decided I wanted to live along those values, and agreed to the project.
+
+## life of a researcher?
+
+The next couple of weeks, I put a little bit of time in, but not my life. I went to some career fairs that NYU holds, I hung out with my friends. But as March closed in, I could tell that I needed more guidance as to what I should be doing, so I took the initiative to go to the research faculty office space to meet with my PI (we'd been hitherto coordinating primarily through video chat). Then, for two weeks leading up to a poster conference, I spent somewhere between 20-25 hours per week on the project -- and began to realize that I didn't actually really know what I was doing. Obviously, the lead-up to a deadline is a bad time to have this kind of realization.
+
+During this time, I spent virtually all of my time that wasn't spend eating or in class or sleeping or exercising on this project. It didn't feel like I was taking ownership of the work: more like the work was taking ownership of *me*. I became constantly stressed about not being able to meet my PI's demands; missed class readings and had to shamefacedly sit through both lectures and seminars where I was totally lost; routinely missed about online post-lecture quizzes; and delayed problem sets that always ended up taking way more hours than I hoped. And by research, I really mean fiddling around with Python tools that I'd never used before (numpy, scanpy, matplot, even anaconda) and running into frustrating problems such as dependency hell, memory limitations, and library inefficiencies, more so than the actual analyses I was supposed to run.
+
+I held my breath, and the poster conference came and went. I was not blamed for failing to meet expectations, and it was decided was made that I should start coordinating regularly with a PhD student to get more interim guidance between our weekly meetings. But by this point, I'd had enough.
+
+## pride
+
+An obvious question might be, if I was so inexperienced, then why did I get taken on? Out of those that I reached out to, the ones who got back to me, even to turn me down, were almost all exclusively involved in computational biology. That is to say, the field of research that I was able to dip my toes into in high school through a relatively short-term summer internship. The professor who took me this past spring on also took the liberty to examine my transcript and noted that I am unusually far ahead on the NYU CS track, in addition to having a healthy dose of course credits from all the AP exams I took. In other words, an assumption was made that if we take someone who seems pretty smart on paper, then he might be able to do some of our work.
+
+The whole thing was quite disheartening for me. I want to say that I really made the decision out of concern for my academics, social life, and general well-being (which is partially true) but the truth is that it burned my ego: someone took a bet on my competence and it turned out to not go so well.
+
+I've always been of a disposition to turning "can"s into "want"s. Then, delivering the research results was something that I was not only feigning interest in, but also beyond my current skills, even after giving what I believe is my all. Of course, what really matters in any journey to mastery is not how well you can do things in the beginning, but whether or not you keep going after failure. But then I thought about all the other aforementioned concerns. I could've slept fewer hours, ate smaller meals, trained my body less. I could've sucked it up and accepted that many college students don't get around to doing *all* of their assignments anyway and done as many as I could. Was I willing to make those trade-offs? No, not really. Even if I did learn a lot and was about to get a lot more hands-on mentorship from a PhD student, who indeed was very helpful for the times that we were able to connect, the whole ordeal didn't seem "worth it".
+
+## aftermath
+
+What cemented it for me, though, was not feeling any grief over the opportunity cost of leaving the research once the semester was over. I continued to bond with a handful of people and tried novel opportunities. I didn't have as "productive" a semester as I'd hoped, but I'm pretty sure that's an indication that there wasn't much substance to those hopes to begin with.
+
+> "But you only have three options; do what needs to be done, rid yourself of the aspiration, or continue to be tortured in neutral.
+> You can go deeper into the pursuit to achieve your dream, or move on from it altogether.
+> Or there is a third option - stay in purgatory hell, but that’s horrendous and actually worse than abandoning everything.
+> Feel free to choose." --Chris Williamson, 3MM Jun 22
+
+I've heard concern from a number of my peers that due to the over-saturation of CS graduates and the competitiveness of the market, if they don't discover stand-out opportunities soon, they'll graduate dead in the water with a hefty tuition's worth missing from their parents' savings. I'm honestly not sure how true that is. A combination of naivety and optimism incline me to believe that everything will be fine, whatever that might mean, though it'd obviously be better to work towards something than not.
+
+Since transitioning from high school, it's become painfully clear to me that I don't actually have a solid foundation in how to organize my life. I've really only defined and managed "success" in the context of class and extracurriculars. Left to my own devices, I struggle to orient myself towards anything and end up rather miserable. Stack that with the fatigue from a new environment, comparing myself to vastly new kinds of people, and a novel unfamiliarity with my high school friends, the result has been a struggle this summer to really put forward anything that would look like "progress", whether that's getting a job or new research or just a little coding project. It doesn't make me feel good about myself, but all I've really done is consume a ton of anime and manga. I like what I've read, but it's just not normally what I do.
+
+Maybe I'm just lazy at heart. Dunno. In this context, I can't help but think about the [3rd generation curse](https://www.cfainstitute.org/insights/articles/third-generation-wealth-curse-advisor-solutions), the notion that 90% of families struggle to hold onto their wealth gains past two generations. In building generational wealth, I am that 3rd generation. Maybe the phenomenon is just a natural consequence of not necessarily generational idiosyncrasies, but personal ones: there are plenty of people, after all, who do not have to worry about the curse given that they struggle to build wealth in the first place. Maybe a certain ambitious person has a disposition to change their circumstances, but their offspring are just as likely as everyone else to not have the skills and drive to maintain their rewards.
+
+This whole thing is just the rambling of some college freshman. I just really wanted to write it, though. It feels good to encapsulate it in writing. Not just in a journal, but as a concrete text that I come back to repeatedly to refine and reflect. Hopefully things go better in the future. Stay tuned (if you are there, lonely reader...).
