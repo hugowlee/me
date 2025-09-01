@@ -1,4 +1,4 @@
 ---
-title: Welcome to Quartz
+title: Hugo Lee
 ---
-Under construction... :)
+Figuring things out.
