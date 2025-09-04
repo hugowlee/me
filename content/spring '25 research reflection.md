@@ -1,5 +1,5 @@
 ---
-title: Giving Up or Moving Forward
+title: strategic reprioritization (freshman research)
 description: freshman year comp bio research spiel
 date: 2025-7-1
 ---
