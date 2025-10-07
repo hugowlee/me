@@ -1,6 +1,6 @@
 +++
-title = "Hub"
+title = "Archives"
 sort_by = "date"
-template = "blog.html"
+template = "archives.html"
 page_template = "blog-post.html"
 +++

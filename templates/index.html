@@ -1,7 +1,29 @@
 {% extends "base.html" %}
 
-{% block content %}
-<h1 class="title">
-  This is my blog made with Zola.
-</h1>
+{% import "macros.html" as macros %}
+
+{% block content %} <!--this goes inside the container object-->
+<main>
+  <p>Hello, I'm Hugo! (づ ՞ਊ ՞ )づ</p>
+  <img
+    src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExazh3ZW03amZkamUxa3ZvbnNjdzNpbnl3MXJhZ2pzMHRhOGRkMm9pZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Nx0rz3jtxtEre/giphy.gif"
+    alt="*insert gif of Ben Kenobi 'hello there' from 'Revenge of the Sith'*">
+  <p>
+    Some facts about me!
+  <ul>
+    <li>I like to bike, to read, and to play games.</li>
+    <li>Generally speaking, my interests are in systems, writing elegant code, and anything even remotely related to <a
+        href="https://en.wikipedia.org/wiki/Eudaimonia">eudaimonia</a>.</li>
+    <li>I don't know where I want to go in the future, just that it should have <a
+        href="https://80000hours.org/articles/what-is-social-impact-definition/">social impact</a>.</a></li>
+  </ul>
+  But to get a better sense for what and how I think, I suggest you read some of the stuff that I've been working on:
+  <br>
+  {{ macros::list_pages(pages=[
+    get_page(path="failure resume.md"),
+    get_page(path="blog/spring '25 research reflection.md"),
+    get_page(path="blog/karpathy zero to hero.md"),
+  ]) }}
+  </p>
+</main>
 {% endblock content %}

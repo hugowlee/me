@@ -3,15 +3,23 @@
 
 <head>
   <meta charset="utf-8">
-  <title>The Spaceship</title>
+  <title>The Hugship</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
 </head>
 
 <body>
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock content %}
-    </div>
-  </section>
+  <div class="container">
+    <header>
+      <h1><a href="/">The Hugship</a></h1>
+      <nav>
+        <a href="/blog">Archives</a>
+      </nav>
+    </header>
+    {% block content %} {% endblock content %}
+  </div>
 </body>
 
 </html>

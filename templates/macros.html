@@ -1,0 +1,9 @@
+{% macro list_pages(pages) %}
+<ul>
+  {% for page in pages %}
+  <li>
+    <a class="blog-link" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    ({{ page.date }}): {{ page.description }}
+  </li>
+  {% endfor %}
+{% endmacro %}

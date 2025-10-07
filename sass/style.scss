@@ -1,0 +1,98 @@
+// Color scheme
+:root {
+    --palette-bg: #DDFDFE;
+    --palette-text: #10010e;
+    --palette-2: #788585;
+    --palette-1: #EC9192;
+}
+
+// Website background
+html {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--palette-text);
+    background: linear-gradient(135deg, var(--palette-bg) 0%, var(--palette-1) 100%);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+// Main content body, including headers
+.container {
+    width: 600px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+}
+
+// Text body
+main {
+    margin-bottom: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+header h1 a {
+    border-bottom: none;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    // margin-right: 20px;
+}
+
+// Page styles
+.title {
+    margin-bottom: 0;
+    line-height: 3rem;
+}
+
+.subtitle {
+    margin: 0;
+    color: var(--palette-2);
+}
+
+.blog-link {
+    color: var(--palette-1);
+}
+
+// Special feature styles
+img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+a {
+    color: var(--palette-text);
+    text-decoration: none;
+    border-bottom: 2px solid var(--palette-2);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--palette-1);
+    border-bottom-color: var(--palette-text);
+}
+
+li {
+    margin-bottom: 12px;
+}
