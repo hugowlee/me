@@ -13,9 +13,9 @@
 <body>
   <div class="container">
     <header>
-      <h1><a href="/">The Hugship</a></h1>
+      <h1><a href="{{ config.base_url }}">The Hugship</a></h1>
       <nav>
-        <a href="/blog">Archives</a>
+        <a href="{{ get_url(path="@/blog/_index.md") }}">Archives</a>
       </nav>
     </header>
     {% block content %} {% endblock content %}
