@@ -1,16 +1,21 @@
 // Color scheme
 :root {
-    --palette-bg: #DDFDFE;
-    --palette-text: #10010e;
-    --palette-2: #788585;
-    --palette-1: #EC9192;
+    // --palette-bg: #DDFDFE;
+    // --palette-text: #10010e;
+    // --palette-2: #788585;
+    // --palette-1: #EC9192;
+    --palette-bg: #ffffff;
+    --palette-text: #000000;
+    --palette-undertone: #A89B8C;
+    --palette-highlight: #AA4465;
 }
 
 // Website background
 html {
     font-family: 'Noto Sans', sans-serif;
     color: var(--palette-text);
-    background: linear-gradient(135deg, var(--palette-bg) 0%, var(--palette-1) 100%);
+    // background: linear-gradient(135deg, var(--palette-bg) 0%, var(--palette-1) 100%);
+    background-color: var(--palette-bg);
     font-size: 1.1rem;
     line-height: 1.7;
     min-height: 100%;
@@ -25,12 +30,16 @@ body {
 
 // Main content body, including headers
 .container {
-    width: 600px;
+    min-width: 600px;
+    max-width: 50%;
     padding: 50px;
-    background: rgba(255, 255, 255, 0.95);
+    // background: rgba(255, 255, 255, 0.95);
+    // background: var(--palette-text);
+    // color: var(--palette-bg);
     backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+    // box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--palette-text);
     margin-bottom: 50px;
 }
 
@@ -68,11 +77,11 @@ header nav {
 
 .subtitle {
     margin: 0;
-    color: var(--palette-2);
+    color: var(--palette-undertone);
 }
 
 .blog-link {
-    color: var(--palette-1);
+    color: var(--palette-highlight);
 }
 
 // Special feature styles
@@ -84,12 +93,12 @@ img {
 a {
     color: var(--palette-text);
     text-decoration: none;
-    border-bottom: 2px solid var(--palette-2);
+    border-bottom: 2px solid var(--palette-undertone);
     transition: all 0.2s ease;
 }
 
 a:hover {
-    color: var(--palette-1);
+    color: var(--palette-highlight);
     border-bottom-color: var(--palette-text);
 }
 
