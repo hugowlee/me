@@ -12,11 +12,11 @@
 
 // Website background
 html {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto', serif;
     color: var(--palette-text);
     // background: linear-gradient(135deg, var(--palette-bg) 0%, var(--palette-1) 100%);
     background-color: var(--palette-bg);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.7;
     min-height: 100%;
 }
@@ -30,7 +30,7 @@ body {
 
 // Main content body, including headers
 .container {
-    min-width: 600px;
+    // min-width: 600px;
     max-width: 50%;
     padding: 50px;
     // background: rgba(255, 255, 255, 0.95);
@@ -46,6 +46,11 @@ body {
 // Text body
 main {
     margin-bottom: 50px;
+
+    h1, h2, h3 {
+        position: relative;
+        left: -.6rem;
+    }
 }
 
 header {
@@ -69,6 +74,10 @@ header nav {
     // margin-right: 20px;
 }
 
+hr {
+    border-color: var(--palette-highlight);
+}
+
 // Page styles
 .title {
     margin-bottom: 0;
@@ -82,6 +91,42 @@ header nav {
 
 .blog-link {
     color: var(--palette-highlight);
+}
+
+.sn-marker {
+    color: var(--palette-undertone);
+}
+
+.sn-content {
+    position: absolute;
+    right: -300px;
+    width: 250px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding: 0.75rem;
+    background: var(--palette-bg);
+    border-left: 3px solid var(--palette-undertone);
+    border-radius: 4px;
+    transform: translateY(-75%);
+    display: flex;
+    flex-direction: row;
+}
+
+.fn-marker {
+    color: var(--palette-highlight);
+}
+
+.footnotes-list {
+    position: relative;
+    left: -.6rem;
+}
+
+.footnote {
+    margin-bottom: 20px;
+    a {
+        color: var(--palette-highlight);
+        border-bottom: none;
+    }
 }
 
 // Special feature styles

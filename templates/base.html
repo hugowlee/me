@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>The Hugship</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Noto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
 </head>
@@ -18,7 +18,31 @@
         <a href="{{ get_url(path="@/blog/_index.md") }}">Archives</a>
       </nav>
     </header>
+
+    <main>
     {% block content %} {% endblock content %}
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const container = document.getElementById('sidenotes');
+        const markers = document.querySelectorAll('.sn-marker');
+        console.log(markers);
+
+        markers.forEach(marker => {
+          const id = marker.dataset.snId;
+          const text = marker.dataset.snText;
+          console.log(marker.dataset);
+
+          const sidenote = document.createElement('div');
+          sidenote.className = 'sn-content';
+          // sidenote.id = `sn-${id}`;
+          sidenote.innerHTML = `<sup style="margin-right: 6px;">${id}.</sup>${text}`;
+
+          marker.insertAdjacentElement('afterend', sidenote);
+        });
+      });
+    </script>
   </div>
 </body>
 
