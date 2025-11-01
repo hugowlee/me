@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Hugship</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://hugowlee.github.io/me/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="https:&#x2F;&#x2F;hugowlee.github.io&#x2F;me">The Hugship</a></h1>
+      <nav>
+        <a href="https://hugowlee.github.io/me/blog">Archives</a>
+      </nav>
+    </header>
+
+    <hr>
+
+    <main>
+    
+<main>
+  <p>Hello, I'm Hugo! (づ ՞ਊ ՞ )づ</p>
+<p><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExazh3ZW03amZkamUxa3ZvbnNjdzNpbnl3MXJhZ2pzMHRhOGRkMm9pZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Nx0rz3jtxtEre/giphy.gif" alt="insert gif of Ben Kenobi &#39;hello there&#39; from &#39;Revenge of the Sith&#39;" /></p>
+<h2 id="some-facts-about-me">Some facts about me!</h2>
+<ul>
+<li>I like to bike, to read, and to play games.</li>
+<li>Generally speaking, my interests are in systems, writing elegant code, and anything even remotely related to <a href="https://en.wikipedia.org/wiki/Eudaimonia">eudaimonia</a>.</li>
+<li>I don't know where I want to go in the future, but I figure that ideally it'll have a mix of my interests and a fair amount of <a href="https://80000hours.org/articles/what-is-social-impact-definition/">social impact</a>.</li>
+</ul>
+<p>But to get a better sense for what and how I think, I suggest you read some of the stuff that I've been working on:</p>
+
+  
+  
+<ul>
+  
+  <li>
+    <a class="blog-link" href="https://hugowlee.github.io/me/blog/karpathy-zero-to-hero/">Study Journal: Karpathy&#x27;s Zero to Hero</a>
+    (2025-09-16): My experience in following Andrej Karpathy&#x27;s &quot;Zero to Hero&quot; YouTube course on neural networks.
+  </li>
+  
+
+</main>
+
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const container = document.getElementById('sidenotes');
+        const markers = document.querySelectorAll('.sn-marker');
+        console.log(markers);
+
+        markers.forEach(marker => {
+          const id = marker.dataset.snId;
+          const text = marker.dataset.snText;
+          console.log(marker.dataset);
+
+          const sidenote = document.createElement('div');
+          sidenote.className = 'sn-content';
+          // sidenote.id = `sn-${id}`;
+          sidenote.innerHTML = `<sup style="margin-right: 6px;">${id}.</sup>${text}`;
+
+          marker.insertAdjacentElement('afterend', sidenote);
+        });
+      });
+    </script>
+
+    
+  </div>
+</body>
+
+</html>

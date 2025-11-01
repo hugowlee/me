@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Hugship</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://hugowlee.github.io/me/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="https:&#x2F;&#x2F;hugowlee.github.io&#x2F;me">The Hugship</a></h1>
+      <nav>
+        <a href="https://hugowlee.github.io/me/blog">Archives</a>
+      </nav>
+    </header>
+
+    <hr>
+
+    <main>
+    
+<h1 class="title">
+  Failure Resume
+</h1>
+<p class="subtitle">
+  Published <strong>2025-10-07</strong>.
+  Last updated <strong>2025-10-26</strong>.
+</p>
+<p>I got the idea for this from <a href="https://tanaybiradar.com/blog/failure-resume/">Tanay Biradar</a> who got it from <a href="https://jzhao.xyz/posts/a-failure-resume">Jacky Zhao</a>.</p>
+
+
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const container = document.getElementById('sidenotes');
+        const markers = document.querySelectorAll('.sn-marker');
+        console.log(markers);
+
+        markers.forEach(marker => {
+          const id = marker.dataset.snId;
+          const text = marker.dataset.snText;
+          console.log(marker.dataset);
+
+          const sidenote = document.createElement('div');
+          sidenote.className = 'sn-content';
+          // sidenote.id = `sn-${id}`;
+          sidenote.innerHTML = `<sup style="margin-right: 6px;">${id}.</sup>${text}`;
+
+          marker.insertAdjacentElement('afterend', sidenote);
+        });
+      });
+    </script>
+
+    
+  </div>
+</body>
+
+</html>

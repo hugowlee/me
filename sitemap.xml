@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://hugowlee.github.io/me/</loc>
+    </url>
+    <url>
+        <loc>https://hugowlee.github.io/me/blog/</loc>
+    </url>
+    <url>
+        <loc>https://hugowlee.github.io/me/blog/karpathy-zero-to-hero/</loc>
+        <lastmod>2025-09-16</lastmod>
+    </url>
+    <url>
+        <loc>https://hugowlee.github.io/me/failure-resume/</loc>
+        <lastmod>2025-10-26</lastmod>
+    </url>
+</urlset>

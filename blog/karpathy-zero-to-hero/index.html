@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Hugship</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://hugowlee.github.io/me/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="https:&#x2F;&#x2F;hugowlee.github.io&#x2F;me">The Hugship</a></h1>
+      <nav>
+        <a href="https://hugowlee.github.io/me/blog">Archives</a>
+      </nav>
+    </header>
+
+    <hr>
+
+    <main>
+    
+<h1 class="title">
+  Study Journal: Karpathy&#x27;s Zero to Hero
+</h1>
+<p class="subtitle">
+  Published <strong>2025-09-16</strong>.
+  
+</p>
+<p>Links to the course:
+<a href="https://karpathy.ai/zero-to-hero.html">Webpage</a>;
+<a href="https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ">YT Playlist</a></p>
+<h3 id="sept-16">sept 16</h3>
+<p>"As long as you can do the forward pass and the backward pass, it doesn't really matter what the operation is."
+The end of "building micrograd" was so so interesting. It was kind of fun in a way to see how Karpathy would implement certain functions, such as division, for this scalar-valued NN library - it almost felt like creating a new language within the framework of Python. After a certain point, we can start utilizing normal functions like <code>sum</code> over the neurons but then get out objects that let us run backprop in a way that is much simpler than I would've thought. The loss function itself can be represented as a network of nodes (since, in this example, it is just sum of squares of the distances to the target values) and we can then run backprop on THAT network to find the gradient with respect to the loss value. In trying to predict what he was going to do next, I was thinking that maybe we would have to increment each parameter by the gradient times the distance between each output's predicted value and target value, but this is so much more elegant and logical. Now I finally have a frame of reference for what gradient descent looks like from a programmatic perspective. <br />
+lec 1: complete!!
+2.5hrs working : 1hr video len
+(๏ᆺ๏υ)</p>
+<h3 id="sept-3">sept 3</h3>
+<p>Nevermind, I don't know anything about the multivariable case of the chain rule. So his "easy" fix for solving what to do when a node is referenced multiple times doesn't make that much sense to me (just add together the gradients? what? ... actually, are they just still called derivatives? AP Calc BC is not helping me out too much here 😅) <br />
+Not a lot of progress since yesterday, but progress is progress. <br />
+lec 1: 1:31:42</p>
+<h3 id="sept-2">sept 2</h3>
+<p>so far, it's been pretty straightforward. Karpathy makes backpropagation seem so simple. I don't even think it's necessary to think about the chain rule per se in explaining how the gradient is a product of the derivatives (I think that's the proper terminology?), it seems almost intuitive that the way a weight influences the next weight has a multiplicative effect. Hmm. Now that I've written that out, I realize I have a ways to go in being able to <em>explain</em> the process to someone else. <br />
+lec 1, 1:15:08</p>
+
+
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const container = document.getElementById('sidenotes');
+        const markers = document.querySelectorAll('.sn-marker');
+        console.log(markers);
+
+        markers.forEach(marker => {
+          const id = marker.dataset.snId;
+          const text = marker.dataset.snText;
+          console.log(marker.dataset);
+
+          const sidenote = document.createElement('div');
+          sidenote.className = 'sn-content';
+          // sidenote.id = `sn-${id}`;
+          sidenote.innerHTML = `<sup style="margin-right: 6px;">${id}.</sup>${text}`;
+
+          marker.insertAdjacentElement('afterend', sidenote);
+        });
+      });
+    </script>
+
+    
+  </div>
+</body>
+
+</html>
