@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% import "macros.html" as macros %}
 
 {% block content %}
@@ -6,7 +7,6 @@
   {{ section.content | safe }}
   
   {{ macros::list_pages(pages=[
-    get_page(path="blog/spring '25 research reflection.md"),
     get_page(path="blog/karpathy zero to hero.md"),
   ]) }}
 </main>

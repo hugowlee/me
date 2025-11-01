@@ -1,21 +1,14 @@
 // Color scheme
-:root {
-    // --palette-bg: #DDFDFE;
-    // --palette-text: #10010e;
-    // --palette-2: #788585;
-    // --palette-1: #EC9192;
-    --palette-bg: #ffffff;
-    --palette-text: #000000;
-    --palette-undertone: #A89B8C;
-    --palette-highlight: #AA4465;
-}
+$palette-bg: #ffffff;
+$palette-text: #000000;
+$palette-undertone: #A89B8C;
+$palette-highlight: #AA4465;
 
 // Website background
 html {
     font-family: 'Noto', serif;
-    color: var(--palette-text);
-    // background: linear-gradient(135deg, var(--palette-bg) 0%, var(--palette-1) 100%);
-    background-color: var(--palette-bg);
+    color: $palette-text;
+    background-color: $palette-bg;
     font-size: 1.3rem;
     line-height: 1.7;
     min-height: 100%;
@@ -39,7 +32,7 @@ body {
     backdrop-filter: blur(10px);
     // border-radius: 40px;
     // box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-    border: 1px solid var(--palette-text);
+    border: 1px solid $palette-text;
     margin-bottom: 50px;
 }
 
@@ -75,7 +68,7 @@ header nav {
 }
 
 hr {
-    border-color: var(--palette-highlight);
+    border-color: $palette-highlight;
 }
 
 // Page styles
@@ -86,15 +79,15 @@ hr {
 
 .subtitle {
     margin: 0;
-    color: var(--palette-undertone);
+    color: $palette-undertone;
 }
 
 .blog-link {
-    color: var(--palette-highlight);
+    color: $palette-highlight;
 }
 
 .sn-marker {
-    color: var(--palette-undertone);
+    color: $palette-undertone;
 }
 
 .sn-content {
@@ -104,8 +97,8 @@ hr {
     font-size: 0.875rem;
     line-height: 1.5;
     padding: 0.75rem;
-    background: var(--palette-bg);
-    border-left: 3px solid var(--palette-undertone);
+    background: $palette-bg;
+    border-left: 3px solid $palette-undertone;
     border-radius: 4px;
     transform: translateY(-75%);
     display: flex;
@@ -113,7 +106,7 @@ hr {
 }
 
 .fn-marker {
-    color: var(--palette-highlight);
+    color: $palette-highlight;
 }
 
 .footnotes-list {
@@ -124,7 +117,7 @@ hr {
 .footnote {
     margin-bottom: 20px;
     a {
-        color: var(--palette-highlight);
+        color: $palette-highlight;
         border-bottom: none;
     }
 }
@@ -136,15 +129,15 @@ img {
 }
 
 a {
-    color: var(--palette-text);
+    color: $palette-text;
     text-decoration: none;
-    border-bottom: 2px solid var(--palette-undertone);
+    border-bottom: 2px solid $palette-undertone;
     transition: all 0.2s ease;
 }
 
 a:hover {
-    color: var(--palette-highlight);
-    border-bottom-color: var(--palette-text);
+    color: $palette-highlight;
+    border-bottom-color: $palette-text;
 }
 
 li {

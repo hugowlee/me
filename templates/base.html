@@ -15,7 +15,7 @@
     <header>
       <h1><a href="{{ config.base_url }}">The Hugship</a></h1>
       <nav>
-        <a href="{{ get_url(path="@/blog/_index.md") }}">Archives</a>
+        <a href="{{ get_url(path="/blog/") }}">Archives</a>
       </nav>
     </header>
 
@@ -43,6 +43,23 @@
         });
       });
     </script>
+
+    {% if page.footnotes %}
+    <footer>
+      <hr>
+      <div class="footnotes-section">
+        <h3>Footnotes</h3>
+        <div class="footnotes-list">
+          {% for fn in page.footnotes %}
+          <div class="footnote" id="footnote-{{ fn.id }}">
+            <a href="#fn-marker-{{ fn.id }}" class="footnote-backlink"><sup>{{ fn.id }}</sup></a>
+            {{ fn.text | safe }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </footer>
+    {% endif %}
   </div>
 </body>
 

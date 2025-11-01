@@ -14,5 +14,3 @@ Hello, I'm Hugo! (づ ՞ਊ ՞ )づ
 - I don't know where I want to go in the future, but I figure that ideally it'll have a mix of my interests and a fair amount of [social impact](https://80000hours.org/articles/what-is-social-impact-definition/).
 
 But to get a better sense for what and how I think, I suggest you read some of the stuff that I've been working on:
-
-<!-- Featured posts will be inserted here by the template -->
