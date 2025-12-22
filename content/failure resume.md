@@ -7,3 +7,7 @@ template = "blog-post.html"
 +++
 
 I got the idea for this from [Tanay Biradar](https://tanaybiradar.com/blog/failure-resume/) who got it from [Jacky Zhao](https://jzhao.xyz/posts/a-failure-resume).
+
+2025
+- Did research with a professor, decided that I wasn't a good fit and left the team after only two months
+- Rejected for the second time to be a summer camp instructor

@@ -3,11 +3,5 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
-<main>
-  {{ section.content | safe }}
-  
-  {{ macros::list_pages(pages=[
-    get_page(path="blog/karpathy zero to hero.md"),
-  ]) }}
-</main>
+{{ section.content | safe }}
 {% endblock content %}

@@ -3,66 +3,64 @@
 
 <head>
   <meta charset="utf-8">
-  <title>The Hugship</title>
+  <title>Hugo Lee</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto:ital,wght@0,100..900;1,100..900&display=swap"
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <h1><a href="{{ config.base_url }}">The Hugship</a></h1>
-      <nav>
-        <a href="{{ get_url(path="/blog/") }}">Archives</a>
-      </nav>
-    </header>
+  <header>
+    <h1><a href="{{ config.base_url }}">Home</a></h1>
+    <nav>
+      <a href="https://github.com/hugowlee">GH</a>
+      <a href="{{ get_url(path="/blog/") }}">Archives</a>
+    </nav>
+  </header>
 
-    <hr>
-
-    <main>
+  <main>
     {% block content %} {% endblock content %}
-    </main>
+  </main>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const container = document.getElementById('sidenotes');
-        const markers = document.querySelectorAll('.sn-marker');
-        console.log(markers);
+  <footer>
+  </footer>
 
-        markers.forEach(marker => {
-          const id = marker.dataset.snId;
-          const text = marker.dataset.snText;
-          console.log(marker.dataset);
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('sidenotes');
+      const markers = document.querySelectorAll('.sn-marker');
+      console.log(markers);
 
-          const sidenote = document.createElement('div');
-          sidenote.className = 'sn-content';
-          // sidenote.id = `sn-${id}`;
-          sidenote.innerHTML = `<sup style="margin-right: 6px;">${id}.</sup>${text}`;
+      markers.forEach(marker => {
+        const id = marker.dataset.snId;
+        const text = marker.dataset.snText;
+        console.log(marker.dataset);
 
-          marker.insertAdjacentElement('afterend', sidenote);
-        });
+        const sidenote = document.createElement('div');
+        sidenote.className = 'sn-content';
+        // sidenote.id = `sn-${id}`;
+        sidenote.innerHTML = `<sup style="margin-right: 6px;">${id}.</sup>${text}`;
+
+        marker.insertAdjacentElement('afterend', sidenote);
       });
-    </script>
+    });
+  </script>
 
-    {% if page.footnotes %}
-    <footer>
-      <hr>
-      <div class="footnotes-section">
-        <h3>Footnotes</h3>
-        <div class="footnotes-list">
-          {% for fn in page.footnotes %}
-          <div class="footnote" id="footnote-{{ fn.id }}">
-            <a href="#fn-marker-{{ fn.id }}" class="footnote-backlink"><sup>{{ fn.id }}</sup></a>
-            {{ fn.text | safe }}
-          </div>
-          {% endfor %}
-        </div>
+  {% if page.footnotes %}
+  <div class="footnotes-section">
+    <h3>Footnotes</h3>
+    <div class="footnotes-list">
+      {% for fn in page.footnotes %}
+      <div class="footnote" id="footnote-{{ fn.id }}">
+        <a href="#fn-marker-{{ fn.id }}" class="footnote-backlink"><sup>{{ fn.id }}</sup></a>
+        {{ fn.text | safe }}
       </div>
-    </footer>
-    {% endif %}
+      {% endfor %}
+    </div>
   </div>
+  {% endif %}
 </body>
 
 </html>

@@ -1,75 +1,46 @@
 // Color scheme
-$palette-bg: #ffffff;
-$palette-text: #000000;
+$palette-text: #FFFFFC;
+$palette-bg: #1e1e1e;
 $palette-undertone: #A89B8C;
-$palette-highlight: #AA4465;
+$palette-highlight: #17BEBB;
 
 // Website background
 html {
-    font-family: 'Noto', serif;
+    font-family: 'Noto Sans', sans-serif;
     color: $palette-text;
     background-color: $palette-bg;
-    font-size: 1.3rem;
     line-height: 1.7;
     min-height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
+    width: 40%;
+    margin: 20px;
 }
 
-// Main content body, including headers
-.container {
-    // min-width: 600px;
-    max-width: 50%;
-    padding: 50px;
-    // background: rgba(255, 255, 255, 0.95);
-    // background: var(--palette-text);
-    // color: var(--palette-bg);
-    backdrop-filter: blur(10px);
-    // border-radius: 40px;
-    box-shadow: 0 1px 4px $palette-text;
-    border: 1px solid $palette-text;
-    margin-bottom: 50px;
-}
-
-// Text body
-main {
-    margin-bottom: 50px;
-
-    h1, h2, h3 {
-        position: relative;
-        left: -.6rem;
-    }
-}
-
+// Header
 header {
     display: flex;
     justify-content: space-between;
+    padding: 30px 0;
+
+    a {
+        border-bottom: none;
+    }
+
+    nav {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        // margin-right: 20px;
+    }
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.3rem;
-}
+// Text body
 
-header h1 a {
-    border-bottom: none;
-}
-
-header nav {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    // margin-right: 20px;
-}
-
-hr {
-    border-color: $palette-highlight;
-}
+// Footer
 
 // Page styles
 .title {
@@ -117,6 +88,7 @@ hr {
 
 .footnote {
     margin-bottom: 20px;
+
     a {
         color: $palette-highlight;
         border-bottom: none;
@@ -124,9 +96,24 @@ hr {
 }
 
 // Special feature styles
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: large;
+}
+
+h3 {
+    font-size: medium;
+}
+
 img {
     border-radius: 5px;
-    width: 100%;
 }
 
 a {
